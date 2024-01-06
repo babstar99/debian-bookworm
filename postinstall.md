@@ -106,8 +106,8 @@ New 'X' desktop is ben-10ay0003au:1
 Starting applications specified in /home/XXX/.vnc/xstartup
 Log file is /home/ben/.vnc/XXX-10ay0003au:1.log
 
-### Connect via ssh
-ssh -L 5901:127.0.0.1:5901 -C -N -l XXXX your_server_ip
-
-
 $ sudo chmod +x ~/.vnc/xstartup
+
+$ 
+### Connect via ssh
+$ ssh -L 5901:127.0.0.1:5901 -C -N -l XXXX your_server_ip
