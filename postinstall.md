@@ -33,7 +33,7 @@ $ sudo dkms build -m rtl88x2bu -v ${VER} # Takes ~3-minutes on a 3B+
 
 $ sudo dkms install -m rtl88x2bu -v ${VER}
 
-### Blacklist kernel drivers
+#### Blacklist kernel drivers
 
 $ echo "blacklist rtw88_8822bu" | sudo tee /etc/modprobe.d/rtw8822bu.conf
 
@@ -53,7 +53,7 @@ $ echo "blacklist rtl8xxxu" >> ./blacklist-rtl8xxxu.conf
 $ sudo mv ./blacklist-rtl8xxxu.conf /etc/modprobe.d/
 
 
-### Realtek RTL8192eu Automated uninstall/reset
+#### Realtek RTL8192eu Automated uninstall/reset
 
 Run from driver directory:
 
@@ -109,5 +109,5 @@ Log file is /home/ben/.vnc/XXX-10ay0003au:1.log
 $ sudo chmod +x ~/.vnc/xstartup
 
 $ 
-### Connect via ssh
+##### Connect via ssh
 $ ssh -L 5901:127.0.0.1:5901 -C -N -l XXXX your_server_ip
