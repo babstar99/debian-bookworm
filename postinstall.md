@@ -60,4 +60,4 @@ Run from driver directory:
 
 
 ## Install Flatpak
-$ flatpak install brave bitwarden
+$ flatpak install brave bitwarden flatseal
