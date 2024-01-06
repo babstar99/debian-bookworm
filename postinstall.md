@@ -58,3 +58,6 @@ Run from driver directory:
 
 ./uninstall_wifi.sh
 
+
+## Install Flatpak
+$ flatpak install brave bitwarden
