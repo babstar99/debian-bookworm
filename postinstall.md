@@ -15,6 +15,7 @@ $ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub
 
 ## Install 88x2bu Drivers
 https://github.com/cilynx/rtl88x2bu
+
 $ sudo apt-get install git dkms
 
 $ git clone https://github.com/cilynx/rtl88x2bu
