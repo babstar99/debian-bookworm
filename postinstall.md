@@ -126,3 +126,6 @@ https://web.archive.org/web/20231225202210/https://wiki.debian.org/TransparentEn
 Try the gocryptfs method as per the following link.
 https://web.archive.org/web/20230418185508/https://leighmcculloch.com/posts/ubuntu-encrypt-home-directory-with-gocryptfs/
 
+The user has already been added.
+
+$ sudo apt install libpam-mount gocryptfs
