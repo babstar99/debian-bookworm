@@ -50,3 +50,11 @@ $ sudo ./install_wifi.sh
 $ echo "blacklist rtl8xxxu" >> ./blacklist-rtl8xxxu.conf
 
 $ sudo mv ./blacklist-rtl8xxxu.conf /etc/modprobe.d/
+
+
+### Realtek RTL8192eu Automated uninstall/reset
+
+Run from driver directory:
+
+./uninstall_wifi.sh
+
