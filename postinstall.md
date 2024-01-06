@@ -119,4 +119,10 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 
-edit
+### Encrypt HOME folder for user(s)
+Debian has a page for this, however it lists using gocryptfs as an alternative.
+https://web.archive.org/web/20231225202210/https://wiki.debian.org/TransparentEncryptionForHomeFolder
+
+Try the gocryptfs method as per the following link.
+https://web.archive.org/web/20230418185508/https://leighmcculloch.com/posts/ubuntu-encrypt-home-directory-with-gocryptfs/
+
