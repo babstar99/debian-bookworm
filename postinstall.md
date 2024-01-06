@@ -111,3 +111,9 @@ $ sudo chmod +x ~/.vnc/xstartup
 $ 
 ##### Connect via ssh
 $ ssh -L 5901:127.0.0.1:5901 -C -N -l XXXX your_server_ip
+
+
+## SSH user key creation
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
