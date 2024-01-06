@@ -58,6 +58,15 @@ Run from driver directory:
 
 ./uninstall_wifi.sh
 
-
 ## Install Flatpak
 $ flatpak install brave bitwarden flatseal
+
+## Install UFW and fix reboot bug
+https://devtidbits.com/2019/07/31/ufw-service-not-loading-after-a-reboot/
+
+$ sudo apt-get install ufw gufw
+edit /lib/systemd/system/ufw.service
+backup the ufw service file
+$ sudo cp /lib/systemd/system/ufw.service /lib/systemd/system/ufw.service.bak
+add as the final line of the [unit] description
+    After=netfilter-persistent.service
