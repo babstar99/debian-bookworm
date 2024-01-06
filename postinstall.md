@@ -35,3 +35,18 @@ $ sudo dkms install -m rtl88x2bu -v ${VER}
 ### Blacklist kernel drivers
 
 $ echo "blacklist rtw88_8822bu" | sudo tee /etc/modprobe.d/rtw8822bu.conf
+
+### Install Realtek RTL8192eu
+https://github.com/clnhub/rtl8192eu-linux
+
+$ sudo apt install linux-headers-generic build-essential dkms git
+
+$ git clone https://github.com/clnhub/rtl8192eu-linux
+
+$ cd rtl8192eu-linux
+
+$ sudo ./install_wifi.sh
+
+$ echo "blacklist rtl8xxxu" >> ./blacklist-rtl8xxxu.conf
+
+$ sudo mv ./blacklist-rtl8xxxu.conf /etc/modprobe.d/
