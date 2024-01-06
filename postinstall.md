@@ -70,3 +70,43 @@ backup the ufw service file
 $ sudo cp /lib/systemd/system/ufw.service /lib/systemd/system/ufw.service.bak
 add as the final line of the [unit] description
     After=netfilter-persistent.service
+
+
+## Install VNC
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-11
+
+$ sudo apt install xfce4 xfce4-goodies
+
+$ sudo apt install tightvncserver
+
+$ sudo apt install dbus-x11
+
+$ vncserver
+Output
+You will require a password to access your desktops.
+
+Password:
+Verify:
+
+$ vncserver -kill :1
+
+$ mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+
+$ nano ~/.vnc/xstartup
+add 
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+
+$ vncserver
+output
+New 'X' desktop is ben-10ay0003au:1
+
+Starting applications specified in /home/XXX/.vnc/xstartup
+Log file is /home/ben/.vnc/XXX-10ay0003au:1.log
+
+### Connect via ssh
+ssh -L 5901:127.0.0.1:5901 -C -N -l XXXX your_server_ip
+
+
+$ sudo chmod +x ~/.vnc/xstartup
