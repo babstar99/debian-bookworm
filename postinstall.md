@@ -1,4 +1,4 @@
-# Debian Bookwom Post install
+# Debian 12 Bookwom Post install
 
 ## install bash completion
 sudo apt-get install bash-completion
@@ -22,7 +22,7 @@ $ git clone https://github.com/cilynx/rtl88x2bu
 
 $ cd rtl88x2bu/
 
-### DKMS as above
+#### DKMS as above
 $ VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
 
 $ sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
