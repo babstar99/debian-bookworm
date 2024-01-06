@@ -21,7 +21,7 @@ $ git clone https://github.com/cilynx/rtl88x2bu
 
 $ cd rtl88x2bu/
 
-# DKMS as above
+### DKMS as above
 $ VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
 
 $ sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
@@ -36,7 +36,7 @@ $ sudo dkms install -m rtl88x2bu -v ${VER}
 
 $ echo "blacklist rtw88_8822bu" | sudo tee /etc/modprobe.d/rtw8822bu.conf
 
-### Install Realtek RTL8192eu
+## Install Realtek RTL8192eu
 https://github.com/clnhub/rtl8192eu-linux
 
 $ sudo apt install linux-headers-generic build-essential dkms git
