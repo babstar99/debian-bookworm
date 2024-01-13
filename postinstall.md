@@ -126,6 +126,34 @@ https://web.archive.org/web/20231225202210/https://wiki.debian.org/TransparentEn
 Try the gocryptfs method as per the following link.
 https://web.archive.org/web/20230418185508/https://leighmcculloch.com/posts/ubuntu-encrypt-home-directory-with-gocryptfs/
 
+
+### Time and Date synchronisation
+$ sudo aptitude install systemd-timesyncd
+
+$ sudo joe /etc/systemd/timesyncd.conf
+
+[Time]
+NTP=0.au.pool.ntp.org  1.au.pool.ntp.org 2.au.pool.ntp.org 3.au.pool.ntp.org
+FallbackNTP=0.debian.pool.ntp.org 1.debian.pool.ntp.org 2.debian.pool.ntp.org 3.debian.pool.ntp.org
+RootDistanceMaxSec=5
+PollIntervalMinSec=32
+PollIntervalMaxSec=2048
+ConnectionRetrySec=30
+SaveIntervalSec=60
+
+$ sudo timedatectl set-ntp true
+
+$ timedatectl status
+               Local time: Sat 202
+           Universal time: Sat 2024-01-13 04:05:54 UTC
+                 RTC time: Sat 2024-01-13 04:05:54
+                Time zone: Australia/
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+
+
 The user has already been added.
 
 $ sudo apt install libpam-mount gocryptfs
