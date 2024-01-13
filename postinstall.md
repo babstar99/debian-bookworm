@@ -6,6 +6,11 @@ sudo apt-get install bash-completion
 
 ## Install flatpack
 https://flatpak.org/setup/Debian
+Error due to hardware clock not correct
+Error Can't load uri https://dl.flathub.org/repo/flathub.flatpakrepo: While fetching https://dl.flathub.org/repo/flathub.flatpak repo: [60] SSL peer certificate or SSH remote key was not OK
+see
+[Debian bug report #1041049](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1041049)
+
 
 $ apt install flatpak
 
@@ -40,7 +45,7 @@ $ echo "blacklist rtw88_8822bu" | sudo tee /etc/modprobe.d/rtw8822bu.conf
 ## Install Realtek RTL8192eu
 https://github.com/clnhub/rtl8192eu-linux
 
-$ sudo apt install linux-headers-generic build-essential dkms git
+$ $ sudo apt install linux-headers-generic build-essential dkms git
 
 $ git clone https://github.com/clnhub/rtl8192eu-linux
 
@@ -48,9 +53,7 @@ $ cd rtl8192eu-linux
 
 $ sudo ./install_wifi.sh
 
-$ echo "blacklist rtl8xxxu" >> ./blacklist-rtl8xxxu.conf
 
-$ sudo mv ./blacklist-rtl8xxxu.conf /etc/modprobe.d/
 
 
 #### Realtek RTL8192eu Automated uninstall/reset
