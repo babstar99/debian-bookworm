@@ -160,3 +160,9 @@ System clock synchronized: yes
 The user has already been added.
 
 $ sudo apt install libpam-mount gocryptfs
+
+### MPWR BH519A BLUETOOTH DONGLE install
+
+https://github.com/mkopa/Linux-Driver-USB-Bluetooth-5.0-ORICO-BTA-508
+archived version of the driver
+https://web.archive.org/web/20211209231716/https://mpow.s3-us-west-1.amazonaws.com/mpow_BH519A_driver+for+Linux.7z
