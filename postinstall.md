@@ -162,8 +162,11 @@ The user has already been added.
 $ sudo apt install libpam-mount gocryptfs
 
 ### MPWR BH519A BLUETOOTH DONGLE install
-https://web.archive.org/web/20230626001053/https://www.xmpow.com/pages/download
-https://github.com/mkopa/Linux-Driver-USB-Bluetooth-5.0-ORICO-BTA-508  
+Install instructions https://unix.stackexchange.com/questions/637599/bluetooth-dongle-drivers  
+
+Driver  
+https://web.archive.org/web/20230626001053/https://www.xmpow.com/pages/download  
+
 
 archived version of the driver  
 https://web.archive.org/web/20230626001053/https://cdn.shopify.com/s/files/1/0249/2891/1420/files/20201202_BH456A_driverforLinux-1_0929.7z?v=1664445632
