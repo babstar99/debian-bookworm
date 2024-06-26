@@ -126,7 +126,7 @@ $ ssh-keygen -t ed25519 -C "your_email@example.com"
 Debian has a page for this, however it lists using gocryptfs as an alternative.
 https://web.archive.org/web/20231225202210/https://wiki.debian.org/TransparentEncryptionForHomeFolder
 
-Try the gocryptfs method as per the following link.
+Try the gocryptfs method as per the following link.  
 https://web.archive.org/web/20230418185508/https://leighmcculloch.com/posts/ubuntu-encrypt-home-directory-with-gocryptfs/
 
 
@@ -160,3 +160,18 @@ System clock synchronized: yes
 The user has already been added.
 
 $ sudo apt install libpam-mount gocryptfs
+
+### MPWR BH519A BLUETOOTH DONGLE install
+Install instructions https://unix.stackexchange.com/questions/637599/bluetooth-dongle-drivers  
+
+Driver  
+https://web.archive.org/web/20230626001053/https://www.xmpow.com/pages/download  
+
+
+archived version of the driver  
+https://web.archive.org/web/20230626001053/https://cdn.shopify.com/s/files/1/0249/2891/1420/files/20201202_BH456A_driverforLinux-1_0929.7z?v=1664445632
+
+
+
+Possible alternative driver  
+https://web.archive.org/web/20211209231716/https://mpow.s3-us-west-1.amazonaws.com/mpow_BH519A_driver+for+Linux.7z
